@@ -1,0 +1,11 @@
+[2024-02-27 20:29:14] [INFO]: I18nUpdate Mod 3.5.3 is loaded in 1.19.2 with Forge
+[2024-02-27 20:29:14] [DEBUG]: Minecraft path: .
+[2024-02-27 20:29:14] [DEBUG]: User home: C:\Users\1842300398
+[2024-02-27 20:29:14] [DEBUG]: Local file C:\Users\1842300398\.i18nupdatemod\1.19\Minecraft-Mod-Language-Modpack-1-19.zip has been updated recently.
+[2024-02-27 20:29:14] [DEBUG]: Already up to date.
+[2024-02-27 20:29:14] [DEBUG]: Local file C:\Users\1842300398\.i18nupdatemod\1.18\Minecraft-Mod-Language-Modpack-1-18.zip has been updated recently.
+[2024-02-27 20:29:14] [DEBUG]: Already up to date.
+[2024-02-27 20:29:14] [INFO]: Converting: C:\Users\1842300398\.i18nupdatemod\1.19\Minecraft-Mod-Language-Modpack-1-19.zip
+[2024-02-27 20:29:14] [INFO]: Converting: C:\Users\1842300398\.i18nupdatemod\1.18\Minecraft-Mod-Language-Modpack-1-18.zip
+[2024-02-27 20:29:16] [INFO]: Converted: [C:\Users\1842300398\.i18nupdatemod\1.19\Minecraft-Mod-Language-Modpack-1-19.zip, C:\Users\1842300398\.i18nupdatemod\1.18\Minecraft-Mod-Language-Modpack-1-18.zip] -> C:\Users\1842300398\.i18nupdatemod\1.19.2\Minecraft-Mod-Language-Modpack-Converted-1.19.2.zip
+[2024-02-27 20:29:16] [INFO]: Synchronized: C:\Users\1842300398\.i18nupdatemod\1.19.2\Minecraft-Mod-Language-Modpack-Converted-1.19.2.zip -> .\resourcepacks\Minecraft-Mod-Language-Modpack-Converted-1.19.2.zip

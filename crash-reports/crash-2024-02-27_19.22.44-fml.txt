@@ -1,0 +1,151 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 2024-02-27 19:22:44
+Description: Mod loading error has occurred
+
+java.lang.Exception: Mod Loading has failed
+	at net.minecraftforge.logging.CrashReportExtender.dumpModLoadingCrashReport(CrashReportExtender.java:55) ~[forge-1.19.2-43.3.8-universal.jar%23180!/:?] {re:classloading}
+	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:39) ~[forge-1.19.2-43.3.8-universal.jar%23180!/:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:113) ~[server-1.19.2-20220805.130853-srg.jar%23175!/:?] {re:classloading}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$launchService$0(CommonServerLaunchHandler.java:29) ~[fmlloader-1.19.2-43.3.8.jar%2367!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: main
+Suspected Mods: NONE
+Stacktrace:
+	at net.minecraftforge.logging.CrashReportExtender.lambda$dumpModLoadingCrashReport$7(CrashReportExtender.java:58) ~[forge-1.19.2-43.3.8-universal.jar%23180!/:?] {re:classloading}
+-- NO MOD INFO AVAILABLE --
+Details:
+	Mod File: NO FILE INFO
+	Failure message: The Mod File C:\Users\1842300398\Desktop\Forge 1.19.2\mods\MaFgLib-0.1.8-mc1.19.2.jar has mods that were not found
+	Mod Version: NO MOD INFO AVAILABLE
+	Mod Issue URL: NOT PROVIDED
+	Exception message: MISSING EXCEPTION MESSAGE
+Stacktrace:
+	at net.minecraftforge.logging.CrashReportExtender.lambda$dumpModLoadingCrashReport$7(CrashReportExtender.java:58) ~[forge-1.19.2-43.3.8-universal.jar%23180!/:?] {re:classloading}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {}
+	at net.minecraftforge.logging.CrashReportExtender.dumpModLoadingCrashReport(CrashReportExtender.java:56) ~[forge-1.19.2-43.3.8-universal.jar%23180!/:?] {re:classloading}
+	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:39) ~[forge-1.19.2-43.3.8-universal.jar%23180!/:?] {re:classloading}
+	at net.minecraft.server.Main.main(Main.java:113) ~[server-1.19.2-20220805.130853-srg.jar%23175!/:?] {re:classloading}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$launchService$0(CommonServerLaunchHandler.java:29) ~[fmlloader-1.19.2-43.3.8.jar%2367!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%2354!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.10, BellSoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), BellSoft
+	Memory: 106151480 bytes (101 MiB) / 349175808 bytes (333 MiB) up to 2105540608 bytes (2008 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+	Identifier: Intel64 Family 6 Model 158 Stepping 10
+	Microarchitecture: Coffee Lake
+	Frequency (GHz): 2.59
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: Intel(R) UHD Graphics 630
+	Graphics card #0 vendor: Intel Corporation (0x8086)
+	Graphics card #0 VRAM (MB): 1024.00
+	Graphics card #0 deviceId: 0x3e9b
+	Graphics card #0 versionInfo: DriverVersion=27.20.100.9365
+	Graphics card #1 name: NVIDIA GeForce RTX 2060
+	Graphics card #1 vendor: NVIDIA (0x10de)
+	Graphics card #1 VRAM (MB): 4095.00
+	Graphics card #1 deviceId: 0x1f11
+	Graphics card #1 versionInfo: DriverVersion=31.0.15.3742
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Virtual memory max (MB): 20317.05
+	Virtual memory used (MB): 10361.05
+	Swap memory total (MB): 12288.00
+	Swap memory used (MB): 246.38
+	JVM Flags: 0 total; 
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.8.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.8.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.8.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.8.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.8.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar I18nUpdateMod TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		server-1.19.2-20220805.130853-srg.jar             |Minecraft                     |minecraft                     |1.19.2              |NONE      |Manifest: NOSIGNATURE
+		the_midnight_lurker_2.6.10.jar                    |The Midnight Lurker           |midnightlurker                |2.6.10              |NONE      |Manifest: NOSIGNATURE
+		TerraBlender-forge-1.19.2-2.0.1.166.jar           |TerraBlender                  |terrablender                  |2.0.1.166           |NONE      |Manifest: NOSIGNATURE
+		AmbientSounds_FORGE_v5.2.13_mc1.19.2.jar          |Ambient Sounds                |ambientsounds                 |5.2.13              |NONE      |Manifest: NOSIGNATURE
+		BiomesOPlenty-1.19.2-17.1.2.492.jar               |Biomes O' Plenty              |biomesoplenty                 |17.1.2.492          |NONE      |Manifest: NOSIGNATURE
+		[MrCrayfish的枪] cgm-forge-1.19.2-1.3.7.jar         |MrCrayfish's Gun Mod          |cgm                           |1.3.7               |NONE      |Manifest: NOSIGNATURE
+		[玉 🔍] Jade-1.19.1-forge-8.9.2.jar                |Jade                          |jade                          |8.9.2               |NONE      |Manifest: NOSIGNATURE
+		MaFgLib-0.1.8-mc1.19.2.jar                        |MaFgLib                       |mafglib                       |0.1.8-mc1.19.2      |NONE      |Manifest: NOSIGNATURE
+		CreativeCore_FORGE_v2.9.4_mc1.19.2.jar            |CreativeCore                  |creativecore                  |2.9.3               |NONE      |Manifest: NOSIGNATURE
+		HIM.jar                                           |From The Fog                  |watching                      |1.9.1               |NONE      |Manifest: NOSIGNATURE
+		[JEI物品管理器] jei-1.19.2-forge-11.6.0.1019.jar       |Just Enough Items             |jei                           |11.6.0.1019         |NONE      |Manifest: NOSIGNATURE
+		[精妙核心] sophisticatedcore-1.19.2-0.6.2.552.jar     |Sophisticated Core            |sophisticatedcore             |1.19.2-0.6.2.552    |NONE      |Manifest: NOSIGNATURE
+		[Xaero的小地图] Xaeros_Minimap_23.9.7_Forge_1.19.1.jar|Xaero's Minimap               |xaerominimap                  |23.9.7              |NONE      |Manifest: NOSIGNATURE
+		the+man+1.19.2+-+1.1.0.jar                        |The Man From The Fog          |man                           |1.0.0               |NONE      |Manifest: NOSIGNATURE
+		BetterFog-1.19.2-1.2.2.jar                        |Better Fog                    |betterfog                     |1.0.0               |NONE      |Manifest: NOSIGNATURE
+		[Xaero的世界地图] XaerosWorldMap_1.37.8_Forge_1.19.1.ja|Xaero's World Map             |xaeroworldmap                 |1.37.8              |NONE      |Manifest: NOSIGNATURE
+		[更多的枪] additional-guns-0.8.2-1.19.2.jar           |Additional Guns               |additionalguns                |0.8.2               |NONE      |Manifest: NOSIGNATURE
+		[连锁破坏] ftb-ultimine-forge-1902.4.1-build.90.jar   |FTB Ultimine                  |ftbultimine                   |1902.4.1-build.90   |NONE      |Manifest: NOSIGNATURE
+		[精妙背包] sophisticatedbackpacks-1.19.2-3.20.1.1013.j|Sophisticated Backpacks       |sophisticatedbackpacks        |1.19.2-3.20.1.1013  |NONE      |Manifest: NOSIGNATURE
+		endofherobrine-1.19.2-1.0.8.2.jar                 |The End of Herobrine          |endofherobrine                |1.19.2-1.0.8.2      |NONE      |Manifest: NOSIGNATURE
+		Tweakerge-0.1.3-mc1.19.2.jar                      |Tweakerge                     |tweakerge                     |0.1.3-mc1.19.2      |NONE      |Manifest: NOSIGNATURE
+		[红衣学姐]Beware-1.19.2-2.3.0.jar                     |BewareTheRain                 |bwrtherain                    |2.3.0               |NONE      |Manifest: NOSIGNATURE
+		architectury-6.5.90-forge.jar                     |Architectury                  |architectury                  |6.5.90              |NONE      |Manifest: NOSIGNATURE
+		ftb-library-forge-1902.4.1-build.236.jar          |FTB Library                   |ftblibrary                    |1902.4.1-build.236  |NONE      |Manifest: NOSIGNATURE
+		[自定义局域网联机] lanserverproperties-1.9.1-forge.jar    |Lan Server Properties         |lanserverproperties           |1.9.1               |NONE      |Manifest: NOSIGNATURE
+		thestarvedstalker_1-19-2_v3.jar                   |The Starved Stalker           |thestarvedstalker             |1.1                 |NONE      |Manifest: NOSIGNATURE
+		framework-forge-1.19.2-0.6.16.jar                 |Framework                     |framework                     |0.6.16              |NONE      |Manifest: 0d:78:5f:44:c0:47:0c:8c:e2:63:a3:04:43:d4:12:7d:b0:7c:35:37:dc:40:b1:c1:98:ec:51:eb:3b:3c:45:99
+		cloth-config-8.3.115-forge.jar                    |Cloth Config v8 API           |cloth_config                  |8.3.115             |NONE      |Manifest: NOSIGNATURE
+		forge-1.19.2-43.3.8-universal.jar                 |Forge                         |forge                         |43.3.8              |NONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		[苹果皮] appleskin-forge-mc1.19-2.4.2.jar            |AppleSkin                     |appleskin                     |2.4.2+mc1.19        |NONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.19-3.1.40.jar                    |GeckoLib                      |geckolib3                     |3.1.40              |NONE      |Manifest: NOSIGNATURE
+		NEWSPAWN_GOATMAN-1.19.2 - By Flamc04.jar          |goatman                       |goatman                       |1.7.0               |NONE      |Manifest: NOSIGNATURE
+		skin_stalker+-+1.19.2.jar                         |cave_dweller                  |cave_dweller                  |1.6.5               |NONE      |Manifest: NOSIGNATURE
+		corpse_stalker-1.19.2-By FlamcO4.jar              |corpse_stalker                |corpse_stalker                |1.7.0               |NONE      |Manifest: NOSIGNATURE
+		[理智(san值)]sanitydim-mc1.19.2-1.1.0.jar            |Sanity: Descent Into Madness  |sanitydim                     |1.1.0               |NONE      |Manifest: NOSIGNATURE
